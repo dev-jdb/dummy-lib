@@ -1,5 +1,11 @@
 # @dev-jdb/dummy-lib
 
+## 1.1.2
+
+### Patch Changes
+
+- 03d8b49: Make main entry valid
+
 ## 1.1.1
 
 ### Patch Changes
