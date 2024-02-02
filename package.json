@@ -1,0 +1,23 @@
+{
+  "name": "@dev-jdb/dummy-lib",
+  "version": "1.0.0",
+  "description": "A dummy library to make a library deployment example",
+  "main": "index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "npm run build && changeset publish"
+  },
+  "keywords": [],
+  "author": "John Blackwell",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
