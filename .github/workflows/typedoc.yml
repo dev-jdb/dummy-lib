@@ -1,4 +1,4 @@
-name: 'typedoc'
+name: 'Create Documentation'
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: Release
+name: Release library to npm
 on:
   push:
     branches:
@@ -6,7 +6,10 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 permissions: {} #reset
 jobs:
+  tests:
+    uses: ./.github/workflows/tests.yml  # use the callable tests job to run tests
   release:
+    needs: [tests]  # require tests to pass before deploy runs
     # IMPORTANT: prevent this action from running on forks
     if: github.repository == 'dev-jdb/dummy-lib'
     permissions:
@@ -15,7 +18,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 20

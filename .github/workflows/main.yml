@@ -1,4 +1,4 @@
-name: "CI"
+name: "Changeset to main"
 on:
   pull_request:
     branches:
@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -17,10 +17,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - run: npm i
     # add your test, lint steps here
+  tests:
+    uses: ./.github/workflows/tests.yml  # use the callable tests job to run tests
+
