@@ -6,14 +6,6 @@
 
 A simple template for creating a typescript library. This application was inspired by this [blog post](https://javascript.plainenglish.io/how-to-create-a-typescript-npm-library-for-dummies-6633f2506a17).
 
-## Roadmap
-
-Features I'd like to include in this template.
-
-- [ ] Testing/coverage (jest?/vitest?/istanbul?)
-- [ ] Generated docs (typedoc)
-- [ ] Style enforcement (prettier/eslint/husky?/lint-staged?)
-
 ## Table of Contents
 
 - [Installation](#installation)
