@@ -28,7 +28,7 @@ Features I'd like to include in this template.
 To install necessary dependencies, run the following command:
 
 ```sh
-npm install
+npm install @dev-jdb/dummy-lib
 ```
 
 ## Usage
@@ -38,6 +38,14 @@ To build the library, run the following command:
 ```sh
 npm run build
 ```
+
+To generate the documentation, run the following command:
+
+```sh
+npm run docs
+```
+
+The documentation will also be published to the Github Pages site when `main` is merged.
 
 ## License
 
@@ -59,4 +67,4 @@ npm test
 
 If you have any questions about the repo, open an issue.
 
-You can find more of my work at [orgs/@dev-jdb](https://github.com/@dev-jdb/).
+You can find more of my work at [dev-jdb](https://github.com/dev-jdb/).
