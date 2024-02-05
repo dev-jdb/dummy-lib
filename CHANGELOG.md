@@ -1,5 +1,11 @@
 # @dev-jdb/dummy-lib
 
+## 1.3.0
+
+### Minor Changes
+
+- 5c74488: Adds a multiply function
+
 ## 1.2.0
 
 ### Minor Changes
