@@ -45,7 +45,7 @@ This project is licensed under the MIT license.
 
 ## Contributing
 
-Pull Requests are welcome for this project, but please explain what you're trying to accomplish in the Request.
+Pull Requests are welcome for this project, but please explain what you're trying to accomplish in the Pull Request.
 
 ## Tests
 
