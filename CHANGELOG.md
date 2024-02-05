@@ -1,5 +1,15 @@
 # @dev-jdb/dummy-lib
 
+## 1.2.0
+
+### Minor Changes
+
+- 7ea4e91: Complete the initial to-do list
+  - Add typedoc
+  - Add prettier
+  - Add eslint
+  - Add jest
+
 ## 1.1.2
 
 ### Patch Changes
